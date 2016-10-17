@@ -71,15 +71,6 @@ class TicTacToe():
             return True
         return False
 
-    def check_if_tied(self):
-        """
-        If the game is both finished and 'who_won()' returns
-        None, then the game is tied.
-        """
-        if self.finished() and self.who_won() == None:
-            return True
-        return False
-
     def who(self, player):
         return self.computer if player == self.human else self.human
 
